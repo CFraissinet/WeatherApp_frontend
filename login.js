@@ -6,7 +6,7 @@ document.querySelector("#register").addEventListener("click", () => {
   const userEmail = document.querySelector("#registerEmail").value;
   const userPassword = document.querySelector("#registerPassword").value;
 
-  fetch("https://weather-app-backend-sigma.vercel.app/signup", {
+  fetch("https://weather-app-backend-sigma.vercel.app/users/signup", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -33,7 +33,7 @@ document.querySelector("#connection").addEventListener("click", () => {
   const userEmail = document.querySelector("#registerEmail").value;
   const userPassword = document.querySelector("#registerPassword").value;
 
-  fetch("/users/signin", {
+  fetch("https://weather-app-backend-sigma.vercel.app/users/signin", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
