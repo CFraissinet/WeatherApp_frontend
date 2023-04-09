@@ -19,7 +19,7 @@ document.querySelector("#register").addEventListener("click", () => {
     .then((data) => {
       console.log(data);
       if (data.result === true) {
-        window.location.assign("./frontend/index.html");
+        window.location.assign("/index.html");
         return true;
       } else {
         console.log(data.error);
@@ -45,7 +45,7 @@ document.querySelector("#connection").addEventListener("click", () => {
     .then((data) => {
       //console.log(data);
       if (data.result === true) {
-        window.location.assign("./frontend/index.html");
+        window.location.assign("/index.html");
         return true;
       } else {
         console.log(data.error);
