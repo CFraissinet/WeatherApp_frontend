@@ -10,9 +10,9 @@ document.querySelector("#register").addEventListener("click", () => {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      userName, //: userName,
-      userEmail, //: userEmail,
-      userPassword, //: userPassword,
+      name: userName, //: userName,
+      email: userEmail, //: userEmail,
+      password: userPassword, //: userPassword,
     }),
   })
     .then((response) => response.json())
@@ -37,8 +37,8 @@ document.querySelector("#connection").addEventListener("click", () => {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      userEmail, //: userEmail,
-      userPassword, //: userPassword,
+      email: userEmail, //: userEmail,
+      password: userPassword, //: userPassword,
     }),
   })
     .then((response) => response.json())
